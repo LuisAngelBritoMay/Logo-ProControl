@@ -5,27 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ProControl</title>
 <style>
-body { margin: 0; padding: 24px; background: #fff; }
-.g { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto 24px; }
-.g img { width: 100%; height: auto; display: block; }
+body { margin: 0; padding: 32px 20px; background: #fff; font-family: 'Segoe UI', system-ui, sans-serif; }
+.g { display: grid; grid-template-columns: repeat(auto-fill, 220px); gap: 16px; justify-content: center; max-width: 1100px; margin: 0 auto 32px; }
+.g a {
+  display: flex; align-items: center; justify-content: center;
+  width: 220px; height: 52px; box-sizing: border-box;
+  background: #00ACBC; color: #fff; text-decoration: none;
+  font-size: 15px; font-weight: 600; border-radius: 8px; text-align: center;
+}
+.g a:hover { background: #008a98; }
+.g a:focus-visible { outline: 3px solid #0f172a; outline-offset: 2px; }
 </style>
 </head>
 <body>
 <div class="g">
-  <img src="documentos.png" alt="">
-  <img src="almacenamiento.png" alt="">
-  <img src="meet.png" alt="">
-  <img src="seguridad.png" alt="">
-  <img src="correo.png" alt="">
-  <img src="gemini.png" alt="">
+  <a href="documentos.png" target="_blank" rel="noopener">Documentos Vivos</a>
+  <a href="almacenamiento.png" target="_blank" rel="noopener">Infraestructura Cloud</a>
+  <a href="meet.png" target="_blank" rel="noopener">Comunicaciones</a>
+  <a href="seguridad.png" target="_blank" rel="noopener">Blindaje Corporativo</a>
+  <a href="correo.png" target="_blank" rel="noopener">Identidad Institucional</a>
+  <a href="gemini.png" target="_blank" rel="noopener">Inteligencia Artificial</a>
 </div>
 <div class="g">
-  <img src="cuentas-administrativos.png" alt="">
-  <img src="cuentas-calidad.png" alt="">
-  <img src="cuentas-operaciones.png" alt="">
-  <img src="cuentas-merida.png" alt="">
-  <img src="cuentas-sucursal.png" alt="">
-  <img src="cuentas-erp.png" alt="">
+  <a href="cuentas-administrativos.png" target="_blank" rel="noopener">Administrativos</a>
+  <a href="cuentas-calidad.png" target="_blank" rel="noopener">Calidad</a>
+  <a href="cuentas-operaciones.png" target="_blank" rel="noopener">Operaciones</a>
+  <a href="cuentas-merida.png" target="_blank" rel="noopener">Mérida (Sucursal)</a>
+  <a href="cuentas-sucursal.png" target="_blank" rel="noopener">Cuenta Maestra (EP)</a>
+  <a href="cuentas-erp.png" target="_blank" rel="noopener">Cuenta Maestra (ERP)</a>
 </div>
 </body>
 </html>
