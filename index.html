@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            img {max-width: 200px; height: auto;}
-        </style>
-    </head>
-    <body>
-        <img src="https://github.com/gavainc/Procontrol-Mexico/blob/main/Logo%20Procontrol%20Vectores.png?raw=true" alt="LOGO">
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProControl - Pilares de la Transformación</title>
+<style>
+:root {
+  --cyan: #00ACBC; --orange: #F09235; --green: #34A853; --blue: #4285F4; --red: #EA4335; --yellow: #FBBC05;
+  --text-main: #0f172a; --gray-dark: #334155; --border-color: #e2e8f0;
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 40px 20px; background: #fff; color: var(--text-main); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; line-height: 1.6; }
+.wrap { max-width: 1100px; margin: auto; }
+h1 { text-align: center; font-size: 36px; letter-spacing: -1px; margin: 0 0 56px; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 56px; row-gap: 48px; }
+.pilar { display: flex; align-items: center; gap: 28px; }
+.pilar.rev { flex-direction: row-reverse; }
+.pilar img { width: 150px; height: 150px; flex: none; object-fit: contain; }
+.txt { flex: 1; padding-left: 24px; border-left: 4px solid var(--c, var(--cyan)); }
+.pilar.rev .txt { padding-left: 0; padding-right: 24px; border-left: 0; border-right: 4px solid var(--c, var(--cyan)); }
+.txt h2 { margin: 0 0 10px; font-size: 22px; font-weight: 800; line-height: 1.2; }
+.txt p { margin: 0; font-size: 15px; color: var(--gray-dark); }
+
+.c-blue { --c: var(--blue); } .c-orange { --c: var(--orange); } .c-green { --c: var(--green); }
+.c-cyan { --c: var(--cyan); } .c-red { --c: var(--red); } .c-yellow { --c: var(--yellow); }
+
+@media (max-width: 800px) {
+  .grid { grid-template-columns: 1fr; }
+  .pilar, .pilar.rev { flex-direction: row; }
+  .pilar.rev .txt { padding-right: 0; padding-left: 24px; border-right: 0; border-left: 4px solid var(--c, var(--cyan)); }
+  .pilar img { width: 96px; height: 96px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Pilares de la Transformación</h1>
+
+  <div class="grid">
+    <div class="pilar">
+      <img src="img/documentos.png" alt="Documentos Vivos">
+      <div class="txt c-blue">
+        <h2>Documentos Vivos</h2>
+        <p>Todo sincronizado en un solo lugar. El ERP Axis, los correos y los documentos conviven en la misma nube con coedición en tiempo real.</p>
+      </div>
+    </div>
+
+    <div class="pilar rev">
+      <img src="img/almacenamiento.png" alt="Infraestructura Cloud">
+      <div class="txt c-orange">
+        <h2>Infraestructura Cloud</h2>
+        <p><strong>Bolsa compartida de 34 TB totales</strong> (2 TB por usuario). Garantiza la capacidad para alojar evidencias fotográficas y reportes operativos sin límites físicos.</p>
+      </div>
+    </div>
+
+    <div class="pilar">
+      <img src="img/meet.png" alt="Comunicaciones Unificadas">
+      <div class="txt c-green">
+        <h2>Comunicaciones Unificadas</h2>
+        <p>Elimina suscripciones de terceros (Zoom). Videoconferencias de alta calidad con grabación directa a Drive y minutas automáticas generadas por IA.</p>
+      </div>
+    </div>
+
+    <div class="pilar rev">
+      <img src="img/seguridad.png" alt="Blindaje Corporativo">
+      <div class="txt c-cyan">
+        <h2>Blindaje Corporativo</h2>
+        <p><strong>Propiedad total</strong> de los archivos para la empresa. Gestión de dispositivos (MDM), borrado remoto y cancelación de accesos en 1 clic.</p>
+      </div>
+    </div>
+
+    <div class="pilar">
+      <img src="img/correo.png" alt="Identidad Institucional">
+      <div class="txt c-red">
+        <h2>Identidad Institucional</h2>
+        <p>Comunicación profesional respaldada por el motor de Gmail, con dominio propio, firmas unificadas y el mejor filtro Anti-Phishing del mercado.</p>
+      </div>
+    </div>
+
+    <div class="pilar rev">
+      <img src="img/gemini.png" alt="Inteligencia Artificial">
+      <div class="txt c-yellow">
+        <h2>Inteligencia Artificial</h2>
+        <p>Gemini no es solo un chat, es un motor analítico que cruza datos operativos y asiste al equipo directamente en sus documentos diarios.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
